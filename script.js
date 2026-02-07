@@ -2,7 +2,7 @@
 // CONFIGURACIÓN - REEMPLAZA ESTA URL CON LA TUYA
 // ============================================
 // Después de crear tu Google Sheet, copia aquí la URL de publicación
-const GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQzTWnqkbDvsrAbU8PxmjIIXnNG9IukKe2fUR_Cj1l5hDhCM013YErk27n-BucRezIDzEsNBhxiHYI9/pubhtml';
+const GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQzTMngkbDvsrAbU8PxmjlIKnW69IuKko2fUR_Cjl16hDnCM013YEck27n-8ucRezIDzEsNBhxiHV19/pub?output=csv';
 
 // Tiempo de actualización en milisegundos (5000 = 5 segundos)
 const UPDATE_INTERVAL = 5000;
