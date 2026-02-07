@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: transparent;
+    font-family: 'Arial Black', Arial, sans-serif;
+    overflow: hidden;
+}
+
+.overlay-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+    filter: grayscale(70%);
+}
+
+.game-item.active {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.game-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.counter {
+    background: #000000;
+    border: 3px solid #333;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.counter.red {
+    background: #ff0000;
+    border-color: #cc0000;
+}
+
+.count {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.deaths-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.skull-icon {
+    height: 50px;
+    width: auto;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+/* Animación sutil para el juego activo */
+.game-item.active .counter {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}

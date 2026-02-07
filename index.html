@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Royale Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay-container">
+        <!-- Warzone -->
+        <div class="game-item" data-game="warzone">
+            <img src="Call_of_Duty_Warzone_Black.svg" alt="Warzone" class="game-logo">
+            <div class="counter">
+                <span class="count" id="warzone-count">0</span>
+            </div>
+        </div>
+
+        <!-- PUBG -->
+        <div class="game-item" data-game="pubg">
+            <img src="pubg-1-logo-svgrepo-com.svg" alt="PUBG" class="game-logo">
+            <div class="counter">
+                <span class="count" id="pubg-count">0</span>
+            </div>
+        </div>
+
+        <!-- Free Fire -->
+        <div class="game-item" data-game="freefire">
+            <img src="freefire-1.svg" alt="Free Fire" class="game-logo">
+            <div class="counter">
+                <span class="count" id="freefire-count">0</span>
+            </div>
+        </div>
+
+        <!-- Fortnite -->
+        <div class="game-item" data-game="fortnite">
+            <img src="FortniteLogo.svg" alt="Fortnite" class="game-logo">
+            <div class="counter">
+                <span class="count" id="fortnite-count">0</span>
+            </div>
+        </div>
+
+        <!-- Total Deaths -->
+        <div class="deaths-container">
+            <img src="Noto_Emoji_v2_034_1f480_svg.png" alt="Deaths" class="skull-icon">
+            <div class="counter red">
+                <span class="count" id="total-deaths">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
